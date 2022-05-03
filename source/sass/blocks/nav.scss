@@ -1,0 +1,5 @@
+@media (min-width: 320px) {
+  .nav--closed {
+    @include visually-hidden();
+  }
+}

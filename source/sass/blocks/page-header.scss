@@ -1,0 +1,36 @@
+@media (min-width: 320px) {
+  .page-header {
+    display: flex;
+    width: 280px;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .page-header__logo {
+    width: 28px;
+  }
+
+  .page-header__button {
+    width: 108px;
+    height: 34px;
+  }
+
+  .page-header__nav-toggle {
+    @include button();
+    position: relative;
+    width: 24px;
+    background-color: #FFFFFF;
+    height: 2px;
+    box-shadow: 0 8px 0 #FFFFFF;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 2px;
+      background-color: #FFFFFF;
+      top: 16px;
+      left: 8px;
+    }
+  }
+}

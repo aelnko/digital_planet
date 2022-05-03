@@ -1,0 +1,8 @@
+@media (min-width: 320px) {
+  .order-button {
+    @include button();
+    outline: 2px solid #0DD1A2;
+    border-radius: 2px;
+    font-size: 14px;
+  }
+}
