@@ -2,13 +2,22 @@
   .page-body {
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
-    background-image: url(../../img/mobile-intro-bg.jpg);
-    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 320px;
     margin: 0 auto;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../../img/mobile-intro-bg.jpg);
+      background-repeat: no-repeat;
+      width: 320px;
+      height: 568px;
+      z-index: -1;
+    }
   }
 
   .page-body__header {

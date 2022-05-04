@@ -1,0 +1,23 @@
+@media (min-width: 320px) {
+  .about {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/index-bg.jpg");
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      width: 320px;
+      height: 568px;
+      z-index: -1;
+      top: 32px;
+      left: -16px;
+      background-position-x: 80px;
+    }
+  }
+
+  .about__title {
+    margin: 0;
+  }
+}

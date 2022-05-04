@@ -1,0 +1,70 @@
+@media (min-width: 320px) {
+  .intro-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 207px;
+  }
+
+  .intro-buttons__order {
+    @include button();
+    width: 207px;
+    height: 55px;
+    background-color: #15B38D;
+    position: relative;
+    border-radius: 3px;
+
+    &::after {
+      content: "Заказать";
+      position: absolute;
+      top: 18px;
+      left: 72px;
+      font-size: 18px;
+      line-height: 21px;
+      font-weight: 700;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 35px;
+      width: 25px;
+      height: 25px;
+      z-index: 1;
+      background-image: url("../../img/order-btn-icon.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .intro-buttons__video {
+    margin-top: 12px;
+    @include button();
+    width: 207px;
+    height: 55px;
+    border: 3px solid #15B38D;
+    border-radius: 3px;
+    position: relative;
+
+    &::after {
+      content: "Видео";
+      position: absolute;
+      top: 15px;
+      left: 88px;
+      font-size: 18px;
+      line-height: 21px;
+      font-weight: 700;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 13px;
+      left: 49px;
+      width: 25px;
+      height: 25px;
+      z-index: 1;
+      background-image: url("../../img/video-btn-icon.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
