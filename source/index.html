@@ -65,22 +65,35 @@
         Скролл вниз
       </button>
     </section>
+    <div class="page-main__wrapper">
     <section class="page-main__about about">
       <h2 class="about__title">Что такое VR-планетарий?</h2>
-      <p class="about__description--first">
-        Это образовательная программа, использующая технологию виртуальной реальности.
-      </p>
-      <p class="about__decription--second">
-        Зрителям выдаются очки виртуальной реальности, оператор запускает сеанс планетария на всех очках одновременно. В коллекции фильмов идут обучающие картины о космосе, астрономии и обществознании.
-      </p>
-      <p class="about__description--third">
-        За счёт реалистичности и имитации игры такое обучение повышает мотивацию и стимулирует активную мозговую деятельность ребёнка.
-      </p>
+      <div class="about__description-wrapper">
+        <p class="about__description about__description--first">
+          Это образовательная программа, использующая технологию виртуальной реальности.
+        </p>
+        <p class="about__description about__description--second">
+          Зрителям выдаются очки виртуальной реальности, оператор запускает сеанс планетария на всех очках одновременно. В коллекции фильмов идут обучающие картины о космосе, астрономии и обществознании.
+        </p>
+        <p class="about__description about__description--third">
+          За счёт реалистичности и имитации игры такое обучение повышает мотивацию и стимулирует активную мозговую деятельность ребёнка.
+        </p>
+      </div>
       <div class="about__gallery about-gallery">
         <h3 class="about-gallery__title">
           Что показываем в планетарии
         </h3>
-        <img src="img/astronaut-in-outer-space.jpg" alt="Астронавт в космосе" class="about-gallery__image" width="288" height="180">
+        <div class="about-gallery__images gallery-images">
+          <img src="img/astronaut-in-outer-space.jpg" alt="Астронавт в космосе" class="about-gallery__image" width="288" height="180">
+          <div class="gallery-images__buttons-wrapper">
+            <span class="gallery-images__counter">
+              01&nbsp;/&nbsp;
+              <span class="gallery-images__counter-max">06</span>
+            </span>
+            <button class="gallery-images__button-prev button-prev"></button>
+            <button class="gallery-images__button-next button-next"></button>
+          </div>
+        </div>
       </div>
     </section>
     <section class="page-main__instruction instruction">
@@ -88,43 +101,67 @@
         Как это работает?
       </h2>
       <ul class="instruction__list instruction-list">
-        <li class="instruction-list__item instruction-item">
-          <h3 class="instruction-item__title">
-            Готовим инвентарь
-          </h3>
-          <img src="img/inventory-preparing.jpg" alt="Готовим инвентарь" class="instruction-item__image" width="195" height="130">
-          <p class="instruction-item__text">
-            Наши специалисты готовят каждые VR-очки к использованию, обрабатывая устройства специальным средством для ухода после каждого сеанса.
-          </p>
+        <li class="instruction-list__item instruction-item instruction-item--first instruction-item--visible">
+          <div class="instruction-item__wrapper">
+            <h3 class="instruction-item__title">
+              Готовим инвентарь
+            </h3>
+            <div class="instruction-item__image-wrapper">
+              <img src="img/inventory-preparing.jpg" alt="Готовим инвентарь" class="instruction-item__image" width="195" height="130">
+              <span class="instruction-item__image-counter">1</span>
+            </div>
+            <p class="instruction-item__text">
+              Наши специалисты готовят каждые VR-очки к использованию, обрабатывая устройства специальным средством для ухода после каждого сеанса.
+            </p>
+          </div>
         </li>
-        <li class="instruction-list__item instruction-item">
-          <h3 class="instruction-item__title">
-            Выбираем фильм
-          </h3>
-          <img src="img/choose-film.jpg" alt="Выбираем фильм" class="instruction-item__image" width="195" height="130">
-          <p class="instruction-item__text">
-            В нашем архиве есть образовательные фильмы по теме космоса, астрологии и обществознания. Мы работаем с самым крупным производителем мультимедиа продуктов в РФ.
-          </p>
+        <li class="instruction-list__item instruction-item instruction-item--second">
+          <div class="instruction-item__wrapper">
+            <h3 class="instruction-item__title">
+              Выбираем фильм
+            </h3>
+            <div class="instruction-item__image-wrapper">
+              <img src="img/choose-film.jpg" alt="Выбираем фильм" class="instruction-item__image" width="195" height="130">
+              <span class="instruction-item__image-counter">2</span>
+            </div>
+            <p class="instruction-item__text">
+              В нашем архиве есть образовательные фильмы по теме космоса, астрологии и обществознания. Мы работаем с самым крупным производителем мультимедиа продуктов в РФ.
+            </p>
+          </div>
         </li>
-        <li class="instruction-list__item instruction-item">
-          <h3 class="instruction-item__title">
-            Надеваем VR-очки
-          </h3>
-          <img src="img/put-on-VR.jpg" alt="Надеваем VR-очки" class="instruction-item__image" width="195" height="130">
-          <p class="instruction-item__text">
-            Ученики получают VR-очки, наш техник помогает им разобраться как правильно надеть очки и закрепить их на голове.  Для ребят со зрением, отличным от 100%, техник настраивает диоптрии.
-          </p>
+        <li class="instruction-list__item instruction-item instruction-item--third">
+          <div class="instruction-item__wrapper">
+            <h3 class="instruction-item__title">
+              Надеваем VR-очки
+            </h3>
+            <div class="instruction-item__image-wrapper">
+              <img src="img/put-on-VR.jpg" alt="Надеваем VR-очки" class="instruction-item__image" width="195" height="130">
+              <span class="instruction-item__image-counter">3</span>
+            </div>
+            <p class="instruction-item__text">
+              Ученики получают VR-очки, наш техник помогает им разобраться как правильно надеть очки и закрепить их на голове.  Для ребят со зрением, отличным от 100%, техник настраивает диоптрии.
+            </p>
+          </div>
         </li>
-        <li class="instruction-list__item instruction-item">
-          <h3 class="instruction-item__title">
-            Исследуем галактики!
-          </h3>
-          <img src="img/explore.jpg" alt="Ребёнок исследует галактики при помощи VR" class="instruction-item__image" width="195" height="130">
-          <p class="instruction-item__text">
-            Ребята окунаются в виртуальные миры и с удовольствием изучают всё вокруг. После показа остаются яркие эмоции и запоминаются важные моменты  о планетах, звёздах и галактике.
-          </p>
+        <li class="instruction-list__item instruction-item instruction-item--fourth">
+          <div class="instruction-item__wrapper">
+            <h3 class="instruction-item__title">
+              Исследуем галактики!
+            </h3>
+            <div class="instruction-item__image-wrapper">
+              <img src="img/explore.jpg" alt="Ребёнок исследует галактики при помощи VR" class="instruction-item__image" width="195" height="130">
+              <span class="instruction-item__image-counter">4</span>
+            </div>
+            <p class="instruction-item__text">
+              Ребята окунаются в виртуальные миры и с удовольствием изучают всё вокруг. После показа остаются яркие эмоции и запоминаются важные моменты  о планетах, звёздах и галактике.
+            </p>
+          </div>
         </li>
       </ul>
+      <div class="instruction__buttons">
+        <button class="instruction__button-prev button-prev"></button>
+        <button class="instruction__button-next button-next"></button>
+      </div>
     </section>
     <section class="page-main__technology technology">
       <h2 class="technology__title">
@@ -279,6 +316,7 @@
         </form>
       </div>
     </section>
+    </div>
   </main>
 
   <footer class="page-body__footer page-footer">
@@ -305,6 +343,9 @@
       </div>
     </section>
   </footer>
+  <script src="js/header.js">
+  </script>
+  <script src="js/instruction-gallery.js"></script>
 
 </body>
 

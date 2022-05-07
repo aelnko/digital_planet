@@ -1,6 +1,13 @@
 @media (min-width: 320px) {
   .page-main {
-    width: 288px;
+    width: 320px;
     margin: 0 auto;
+  }
+
+  .page-main__wrapper {
+    background-image: url("../../img/index-bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: -23px;
   }
 }

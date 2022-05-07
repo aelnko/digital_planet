@@ -1,0 +1,41 @@
+@media (min-width: 320px) {
+  .gallery-images__buttons-wrapper {
+    display: flex;
+    margin-top: -4px;
+    margin-left: 120px;
+  }
+
+  .gallery-images__counter {
+    display: flex;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-left: -31px;
+    margin-top: 14px;
+  }
+
+  .gallery-images__counter-max {
+    font-weight: 400;
+    opacity: 0.8;
+  }
+
+  .gallery-images__button-prev {
+    margin-left: 23px;
+  }
+
+  .gallery-images__button-next {
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: transparent;
+      border-bottom: 1px solid #FFFFFF;
+      border-left: 1px solid #FFFFFF;
+      width: 8px;
+      height: 8px;
+      transform: rotate(-135deg);
+      top: 20px;
+      left: 24px;
+    }
+  }
+}
