@@ -1,0 +1,103 @@
+@media (min-width: 320px) {
+  .technology-item {
+    display: none
+  }
+
+  .technology-item--visible {
+    display: block;
+  }
+
+  .technology-item__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 63px;
+    position: relative;
+  }
+
+  .technology-item__title {
+    order: 1;
+    font-size: 21px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 30px 0 0 16px;
+  }
+
+  .technology-item__image {
+    order: 0;
+  }
+
+  .technology-item__image-wrapper {
+    margin-left: 18px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background-image: url("../../img/vr-dec.svg");
+    }
+  }
+
+  .technology-item__text {
+    order: 2;
+    font-size: 15px;
+    width: 280px;
+    color: #FFFFFF;
+    margin: 10px 0 0 16px;
+  }
+
+  .technology-item {
+    &:nth-of-type(1) .technology-item__image-wrapper {
+      &::before {
+        top: 87px;
+        left: 28px;
+      }
+    }
+
+    &:nth-of-type(2) .technology-item__image-wrapper {
+      &::before {
+        top: 108px;
+        left: 164px;
+      }
+    }
+
+    &:nth-of-type(3) .technology-item__image-wrapper {
+      &::before {
+        top: 74px;
+        left: 168px;
+      }
+    }
+
+    &:nth-of-type(4) .technology-item__image-wrapper {
+      &::before {
+        top: 132px;
+        left: 257px;
+      }
+    }
+
+    &:nth-of-type(3) .technology-item__counter {
+      top: 544px;
+    }
+
+    &:nth-of-type(4) .technology-item__counter {
+      top: 492px;
+    }
+  }
+
+  .technology-item__counter {
+    position: absolute;
+    display: flex;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    font-weight: 500;
+    top: 509px;
+    left: 106px;
+  }
+
+  .technology-item__counter-max {
+    font-weight: 400;
+    opacity: 0.8;
+  }
+}

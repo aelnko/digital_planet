@@ -1,0 +1,11 @@
+@media (min-width: 320px) {
+  .answer-button--opened {
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}

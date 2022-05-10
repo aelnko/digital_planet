@@ -1,0 +1,35 @@
+@media (min-width: 320px) {
+  .contacts-item {
+    margin-left: 17px;
+    
+    &:not(:nth-of-type(3)) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .contacts-item__title {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 24.13px;
+    color: #FFFFFF;
+  }
+
+  .contacts-item__phone {
+    display: block;
+    margin-top: 13px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 19.5px;
+    color: #FFFFFF;
+  }
+
+  .contacts-item__email {
+    display: block;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 19.5px;
+    color: #FFFFFF;
+  }
+}

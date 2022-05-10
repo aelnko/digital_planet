@@ -13,6 +13,7 @@
     flex-direction: column;
     margin-top: 68px;
     margin-left: 27px;
+    position: relative;
   }
 
   .instruction-item__title {
@@ -89,5 +90,25 @@
       top: 103px;
       left: 31px; 
     }
+
+    &:nth-of-type(1) .instruction-item__counter {
+      top: 352px;
+    }
+  }
+
+  .instruction-item__counter {
+    position: absolute;
+    display: flex;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    font-weight: 500;
+    top: 370px;
+    left: 79px;
+  }
+
+  .instruction-item__counter-max {
+    font-weight: 400;
+    opacity: 0.8;
   }
 }

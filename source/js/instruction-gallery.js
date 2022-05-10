@@ -13,6 +13,8 @@ const instructionItems = [
 const buttonPrev = document.querySelector('.instruction__button-prev');
 const buttonNext = document.querySelector('.instruction__button-next');
 
+buttonPrev.disabled = true;
+
 buttonNext.onclick = () => {
   console.log('Клик!');
   buttonPrev.disabled = false;
@@ -24,7 +26,8 @@ buttonNext.onclick = () => {
       instructionItems[2].classList.add('instruction-item--visible')
     } else if (instructionItems[2].classList.contains('instruction-item--visible')) {
       instructionItems[2].classList.remove('instruction-item--visible');
-      instructionItems[3].classList.add('instruction-item--visible')
+      instructionItems[3].classList.add('instruction-item--visible');
+      buttonNext.disabled = true
     } else {
       buttonNext.disabled = true
     }
@@ -41,25 +44,10 @@ buttonPrev.onclick = () => {
       instructionItems[1].classList.add('instruction-item--visible')
     } else if (instructionItems[1].classList.contains('instruction-item--visible')) {
       instructionItems[1].classList.remove('instruction-item--visible');
-      instructionItems[0].classList.add('instruction-item--visible')
+      instructionItems[0].classList.add('instruction-item--visible');
+      buttonPrev.disabled = true
     } else {
       buttonPrev.disabled = true
     }
-  // for (let i = 0; i < instructionItems.length; i += 1) {
-  //   if (instructionItems[i].classList.contains('instruction-item--visible')) {
-  //     instructionItems[i].classList.remove('instruction-item--visible');
-  //     instructionItems[i-1].classList.add('instruction-item--visible');
-  //   }
-  //   if (instructionItem4.classList.contains('instruction-item--visible')) {
-  //     buttonNext.disabled = true;
-  //   } else {
-  //     buttonNext.disabled = false;
-  //   }
-  //   if (instructionItem1.classList.contains('instruction-item--visible')) {
-  //     buttonPrev.disabled = true;
-  //   } else {
-  //     buttonPrev.disabled = false;
-  //   }
-  // }
 }
 

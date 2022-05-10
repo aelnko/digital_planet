@@ -1,0 +1,34 @@
+@media (min-width: 320px) {
+  .modal-window {
+    position: fixed;
+    width: 320px;
+    height: 100%;
+    background-color: #F3F3F3;
+    z-index: 3;
+    margin: 0 auto;
+    display: none;
+  }
+
+  .modal-window--opened {
+    display: block;
+  }
+
+  .modal-window__title {
+    font-size: 21px;
+    font-weight: 700;
+    color: #1C1C1C;
+    margin: 91px 0 0 15px;
+    text-align: center;
+    width: 289px;
+  }
+
+  .modal-window__description {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 19.5px;
+    width: 288px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 13px 0 0 16px;
+  }
+}

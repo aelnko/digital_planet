@@ -1,0 +1,23 @@
+@media (min-width: 320px) {
+  .connection {
+    margin-left: 16px;
+    margin-top: 50px;
+  }
+
+  .connection__title {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 24.13px;
+    color: #FFFFFF;
+    width: 288px;
+  }
+
+  .connection__description {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 19.5px;
+    color: #FFFFFF;
+    margin: 10px 0 0 0;
+  }
+}

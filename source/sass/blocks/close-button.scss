@@ -1,0 +1,30 @@
+@media (min-width: 320px) {
+  .close-button {
+    @include button();
+    width: 20px;
+    height: 20px;
+    position: relative; 
+    margin-top: 26px;
+    margin-left: 270px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 2px;
+      background-color: #1C1C1C;
+      opacity: 0.4;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 2px;
+      background-color: #1C1C1C;
+      opacity: 0.4;
+      transform: rotate(-45deg);
+    }
+  }
+}

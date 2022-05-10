@@ -1,0 +1,14 @@
+@media (min-width: 320px) {
+  .nav-item {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 24px;
+    color: #FFFFFF;
+    line-height: 17.24px;
+
+    &:not(:nth-of-type(6)) {
+      margin-bottom: 35px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@media (min-width: 320px) {
+  .technology {
+    margin-top: 90px;
+  }
+
+  .technology__title {
+    margin: 0 0 0 16px;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32.17px;
+    color: #FFFFFF;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 288px;
+      height: 3px;
+      background-color: #0DD1A2;
+      top: 45px;
+    }
+  }
+
+  .technology__buttons {
+    margin-left: 184px;
+    margin-top: 34px;
+  }
+
+  .technology__button-next {
+    margin-left: -4px;
+  }
+}

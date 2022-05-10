@@ -1,5 +1,9 @@
 @media (min-width: 320px) {
   .nav-list {
+    padding: 0;
     list-style-type: none;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
   }
 }

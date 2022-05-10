@@ -7,6 +7,10 @@
     z-index: 3;
   }
 
+  .page-header--opened-nav {
+    background-image: url("../../img/mobile-nav-bg.jpg");
+  }
+
   .page-header__logo {
     width: 28px;
   }
@@ -34,6 +38,19 @@
       background-color: #FFFFFF;
       top: 12px;
       left: 8px;
+    }
+  }
+
+  .page-header__nav-toggle--close {
+    box-shadow: none;
+    transform: rotate(45deg);
+    top: 6px;
+
+    &::after {
+      width: 24px;
+      left: 0;
+      top: 0;
+      transform: rotate(90deg);
     }
   }
 

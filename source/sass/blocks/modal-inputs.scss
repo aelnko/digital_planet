@@ -1,0 +1,30 @@
+@media (min-width: 320px) {
+  .modal-inputs {
+    width: 288px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-inputs__name-input {
+    margin-top: 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .modal-inputs__phone-input {
+    margin-top: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .modal-inputs__button {
+    @include button();
+    align-self: center;
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+    border: 2px solid #0DD1A2;
+    width: 125px;
+    height: 34px;
+    border-radius: 2px;
+  }
+}

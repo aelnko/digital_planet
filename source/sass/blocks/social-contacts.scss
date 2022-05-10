@@ -1,0 +1,12 @@
+@media (min-width: 320px) {
+  .social-contacts {
+    width: 288px;
+    margin: 0 auto;
+  }
+
+  .social-contacts__list {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+  }
+}

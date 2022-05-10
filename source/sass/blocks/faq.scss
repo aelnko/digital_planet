@@ -1,0 +1,23 @@
+@media (min-width: 320px) {
+  .faq {
+    margin-top: 90px;
+  }
+
+  .faq__title {
+    margin: 0 0 0 16px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 32.17px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #0DD1A2;
+      width: 288px;
+      height: 3px;
+      top: 75px;
+    }
+  }
+}

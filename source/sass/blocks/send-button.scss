@@ -1,0 +1,10 @@
+@media (min-width: 320px) {
+  .send-button {
+    margin-top: 20px;
+    @include button();
+    width: 120px;
+    height: 34px;
+    border: 2px solid #0DD1A2;
+    font-size: 14px;
+  }
+}
