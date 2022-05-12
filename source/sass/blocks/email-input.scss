@@ -17,3 +17,13 @@
     }
   }
 }
+
+@media (min-width: 1366px) {
+  .email-input {
+    margin-top: 0;
+  }
+
+  .email-input__input {
+    width: 277px;
+  }
+}

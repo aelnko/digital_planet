@@ -21,3 +21,23 @@
     }
   }
 }
+
+@media (min-width: 1366px) {
+  .contacts {
+    margin-top: 177px;
+    margin-left: 74px;
+  }
+
+  .contacts__title {
+    font-size: 44px;
+
+    &::before {
+      width: 230px;
+      top: 47px;
+    }
+  }
+
+  .contacts__wrapper {
+    display: flex;
+  }
+}

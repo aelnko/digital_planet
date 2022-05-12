@@ -68,3 +68,52 @@
     }
   }
 }
+
+@media (min-width: 1366px) {
+  .intro-buttons {
+    flex-direction: row;
+    width: 463px;
+    margin-left: 0;
+    justify-content: space-between;
+    margin-top: 72px;
+  }
+
+  .intro-buttons__video {
+    margin-top: 0;
+    width: 201px;
+    height: 68px;
+
+    &::after {
+      font-size: 21px;
+      top: 22px;
+      left: 78px;
+    }
+
+    &::before {
+      width: 31px;
+      height: 31px;
+      background-size: 31px 31px;
+      top: 17px;
+      left: 38px;
+    }
+  }
+
+  .intro-buttons__order {
+    width: 238px;
+    height: 68px;
+
+    &::after {
+      font-size: 21px;
+      top: 25px;
+      left: 84px;
+    }
+
+    &::before {
+      width: 31px;
+      height: 31px;
+      background-size: 31px 31px;
+      top: 19px;
+      left: 40px;
+    }
+  }
+}

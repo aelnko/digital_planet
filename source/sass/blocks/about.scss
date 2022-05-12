@@ -40,3 +40,70 @@
     margin-top: 25px;
   }
 }
+
+@media (min-width: 1366px) {
+  .about {
+    width: 1183px;
+    margin: 0 auto;
+  }
+
+  .about__title {
+    width: 561px;
+    font-size: 44px;
+    padding-top: 0;
+    margin-top: 205px;
+    margin-left: -3px;
+
+    &::before {
+      width: 591px;
+      top: 46px;
+    }
+  }
+
+  .about__description-wrapper {
+    width: 440px;
+    margin-top: 65px;
+    margin-left: 30px;
+  }
+
+  .about__description {
+    width: 440px;
+  }
+
+  .about__scroll-button {
+    @include button();
+    width: 30px;
+    height: 30px;
+    opacity: 0.7;
+    position: relative;
+    margin-left: 576px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 1px;
+      position: absolute;
+      background-color: #FFFFFF;
+      opacity: 0.5;
+      transform: rotate(45deg);
+      top: 15px;
+      left: 7px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 1px;
+      position: absolute;
+      background-color: #FFFFFF;
+      opacity: 0.5;
+      transform: rotate(-45deg);
+      // top: 25px;
+      // left: 145px;
+    }
+  }
+}

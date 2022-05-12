@@ -11,7 +11,7 @@
 <body class="page-body">
   <header class="page-body__header page-header">
     <a href="#" class="page-header__logo logo">
-      <span class="logo-description visually-hidden">
+      <span class="logo__description">
         Digital Planet
       </span>
     </a>
@@ -44,9 +44,6 @@
           Контакты
         </li>
       </ul>
-      <span class="nav__phone">
-        8 (800) 555 35 75
-      </span>
       <ul class="nav__social-contacts nav-social-contacts">
         <li class="nav-social-contacts__item nav-social-item">
           <a href="facebook.com" class="nav-social-item__link nav-social-link nav-social-link--fb">
@@ -64,6 +61,9 @@
         </li>
       </ul>
     </nav>
+    <span class="page-header__phone">
+      8 (800) 555 35 75
+    </span>
   </header>
 
   <main class="page-body__main page-main">
@@ -105,8 +105,9 @@
             Что показываем в планетарии
           </h3>
           <div class="about-gallery__images gallery-images">
-            <img src="img/astronaut-in-outer-space.jpg" alt="Астронавт в космосе" class="about-gallery__image"
-              width="288" height="180">
+            <div class="about-gallery__image-wrapper">
+              <img src="img/astronaut-in-outer-space.jpg" alt="Астронавт в космосе" class="about-gallery__image">
+            </div>
             <div class="gallery-images__buttons-wrapper">
               <span class="gallery-images__counter">
                 01&nbsp;/&nbsp;
@@ -117,6 +118,8 @@
             </div>
           </div>
         </div>
+        <button class="about__scroll-button">
+        </button>
       </section>
       <section class="page-main__instruction instruction">
         <h2 class="instruction__title">
@@ -125,18 +128,20 @@
         <ul class="instruction__list instruction-list">
           <li class="instruction-list__item instruction-item instruction-item--first instruction-item--visible">
             <div class="instruction-item__wrapper">
-              <h3 class="instruction-item__title">
-                Готовим инвентарь
-              </h3>
+              <div class="instruction-item__text-wrapper">
+                <h3 class="instruction-item__title">
+                  Готовим инвентарь
+                </h3>
+                <p class="instruction-item__text">
+                  Наши специалисты готовят каждые VR-очки к использованию, обрабатывая устройства специальным средством
+                  для ухода после каждого сеанса.
+                </p>
+              </div>
               <div class="instruction-item__image-wrapper">
                 <img src="img/inventory-preparing.jpg" alt="Готовим инвентарь" class="instruction-item__image"
                   width="195" height="130">
                 <span class="instruction-item__image-counter">1</span>
               </div>
-              <p class="instruction-item__text">
-                Наши специалисты готовят каждые VR-очки к использованию, обрабатывая устройства специальным средством
-                для ухода после каждого сеанса.
-              </p>
               <span class="instruction-item__counter">
                 01&nbsp;/&nbsp;
                 <span class="instruction-item__counter-max">
@@ -147,18 +152,20 @@
           </li>
           <li class="instruction-list__item instruction-item instruction-item--second">
             <div class="instruction-item__wrapper">
-              <h3 class="instruction-item__title">
-                Выбираем фильм
-              </h3>
+              <div class="instruction-item__text-wrapper">
+                <h3 class="instruction-item__title">
+                  Выбираем фильм
+                </h3>
+                <p class="instruction-item__text">
+                  В нашем архиве есть образовательные фильмы по теме космоса, астрологии и обществознания. Мы работаем с
+                  самым крупным производителем мультимедиа продуктов в РФ.
+                </p>
+              </div>
               <div class="instruction-item__image-wrapper">
                 <img src="img/choose-film.jpg" alt="Выбираем фильм" class="instruction-item__image" width="195"
                   height="130">
                 <span class="instruction-item__image-counter">2</span>
               </div>
-              <p class="instruction-item__text">
-                В нашем архиве есть образовательные фильмы по теме космоса, астрологии и обществознания. Мы работаем с
-                самым крупным производителем мультимедиа продуктов в РФ.
-              </p>
               <span class="instruction-item__counter">
                 02&nbsp;/&nbsp;
                 <span class="instruction-item__counter-max">
@@ -169,18 +176,20 @@
           </li>
           <li class="instruction-list__item instruction-item instruction-item--third">
             <div class="instruction-item__wrapper">
-              <h3 class="instruction-item__title">
-                Надеваем VR-очки
-              </h3>
+              <div class="instruction-item__text-wrapper">
+                <h3 class="instruction-item__title">
+                  Надеваем VR-очки
+                </h3>
+                <p class="instruction-item__text">
+                  Ученики получают VR-очки, наш техник помогает им разобраться как правильно надеть очки и закрепить их на
+                  голове. Для ребят со зрением, отличным от 100%, техник настраивает диоптрии.
+                </p>
+              </div>
               <div class="instruction-item__image-wrapper">
                 <img src="img/put-on-VR.jpg" alt="Надеваем VR-очки" class="instruction-item__image" width="195"
                   height="130">
                 <span class="instruction-item__image-counter">3</span>
               </div>
-              <p class="instruction-item__text">
-                Ученики получают VR-очки, наш техник помогает им разобраться как правильно надеть очки и закрепить их на
-                голове. Для ребят со зрением, отличным от 100%, техник настраивает диоптрии.
-              </p>
               <span class="instruction-item__counter">
                 03&nbsp;/&nbsp;
                 <span class="instruction-item__counter-max">
@@ -191,18 +200,20 @@
           </li>
           <li class="instruction-list__item instruction-item instruction-item--fourth">
             <div class="instruction-item__wrapper">
-              <h3 class="instruction-item__title">
-                Исследуем галактики!
-              </h3>
+              <div class="instruction-item__text-wrapper">
+                <h3 class="instruction-item__title">
+                  Исследуем галактики!
+                </h3>
+                <p class="instruction-item__text">
+                  Ребята окунаются в виртуальные миры и с удовольствием изучают всё вокруг. После показа остаются яркие
+                  эмоции и запоминаются важные моменты о планетах, звёздах и галактике.
+                </p>
+              </div>
               <div class="instruction-item__image-wrapper">
                 <img src="img/explore.jpg" alt="Ребёнок исследует галактики при помощи VR"
                   class="instruction-item__image" width="195" height="130">
                 <span class="instruction-item__image-counter">4</span>
               </div>
-              <p class="instruction-item__text">
-                Ребята окунаются в виртуальные миры и с удовольствием изучают всё вокруг. После показа остаются яркие
-                эмоции и запоминаются важные моменты о планетах, звёздах и галактике.
-              </p>
               <span class="instruction-item__counter">
                 04&nbsp;/&nbsp;
                 <span class="instruction-item__counter-max">
@@ -216,6 +227,8 @@
           <button class="instruction__button-prev button-prev"></button>
           <button class="instruction__button-next button-next"></button>
         </div>
+        <button class="instruction__scroll-button">
+        </button>
       </section>
       <section class="page-main__technology technology">
         <h2 class="technology__title">
@@ -304,6 +317,8 @@
           <button class="technology__button-prev button-prev"></button>
           <button class="technology__button-next button-next"></button>
         </div>
+        <button class="technology__scroll-button">
+        </button>
       </section>
       <section class="page-main__faq faq">
         <h2 class="faq__title">
@@ -324,10 +339,10 @@
               <p class="faq-item__question">
                 Безопасны ли VR-очки для зрения ребёнка? Какие есть ограничения?
               </p>
-              <button class="faq-item__answer-button faq-item__answer-button--second">
+              <button class="faq-item__answer-button faq-item__answer-button--second answer-button--opened">
               </button>
             </div>
-            <div class="faq-item__answer-wrapper">
+            <div class="faq-item__answer-wrapper faq-item__answer-wrapper--opened">
               <p class="faq-item__answer">
                 VR-очки были разработаны специально для того, чтобы каждый человек, независимо от возраста, качества
                 зрения и опыта использования аналогичных продуктов мог безопасно и легко пользоваться этой технологией.
@@ -356,76 +371,82 @@
             </div>
           </li>
         </ul>
+        <button class="faq__scroll-button">
+        </button>
       </section>
       <section class="page-main__contacts contacts">
         <h2 class="contacts__title">
           Контакты
         </h2>
-        <ul class="contacts__list contacts-list">
-          <li class="contacts-list__item contacts-item">
-            <h3 class="contacts-item__title">
-              Новороссийск
+        <div class="contacts__wrapper">
+          <ul class="contacts__list contacts-list">
+            <li class="contacts-list__item contacts-item">
+              <h3 class="contacts-item__title">
+                Новороссийск
+              </h3>
+              <span class="contacts-item__phone">
+                +7 (923) 465 – 01 – 41
+              </span>
+              <span class="contacts-item__email">
+                digitalPlanetNR@mail.ru
+              </span>
+            </li>
+            <li class="contacts-list__item contacts-item">
+              <h3 class="contacts-item__title">
+                Москва
+              </h3>
+              <span class="contacts-item__phone">
+                +7 (495) 855 – 24 – 19
+              </span>
+              <span class="contacts-item__email">
+                digitalPlanetMoscow@mail.ru
+              </span>
+            </li>
+            <li class="contacts-list__item contacts-item">
+              <h3 class="contacts-item__title">
+                Саратов
+              </h3>
+              <span class="contacts-item__phone">
+                +7 (942) 221 – 21 – 78
+              </span>
+              <span class="contacts-item__email">
+                digitalPlanetSaratov@mail.ru
+              </span>
+            </li>
+          </ul>
+          <div class="contacts__connection connection">
+            <h3 class="connection__title">
+              Остались вопросы? Задайте их нам!
             </h3>
-            <span class="contacts-item__phone">
-              +7 (923) 465 – 01 – 41
-            </span>
-            <span class="contacts-item__email">
-              digitalPlanetNR@mail.ru
-            </span>
-          </li>
-          <li class="contacts-list__item contacts-item">
-            <h3 class="contacts-item__title">
-              Москва
-            </h3>
-            <span class="contacts-item__phone">
-              +7 (495) 855 – 24 – 19
-            </span>
-            <span class="contacts-item__email">
-              digitalPlanetMoscow@mail.ru
-            </span>
-          </li>
-          <li class="contacts-list__item contacts-item">
-            <h3 class="contacts-item__title">
-              Саратов
-            </h3>
-            <span class="contacts-item__phone">
-              +7 (942) 221 – 21 – 78
-            </span>
-            <span class="contacts-item__email">
-              digitalPlanetSaratov@mail.ru
-            </span>
-          </li>
-        </ul>
-        <div class="contacts__connection connection">
-          <h3 class="connection__title">
-            Остались вопросы? Задайте их нам!
-          </h3>
-          <p class="connection__description">
-            Мы обязательно свяжемся с вами в течение двух рабоичх дней
-          </p>
-          <form action="#" method="post" class="connection__inputs connection-inputs">
-            <div class="connection-inputs__name-input name-input">
-              <label for="name" class="name-input__label visually-hidden">
-                Ваше имя:
-              </label>
-              <input type="text" class="name-input__input" placeholder="Ваше имя:" id="name">
-            </div>
-            <div class="connection-inputs__email-input email-input">
-              <label for="email" class="email-input__label visually-hidden">
-                Ваш email:
-              </label>
-              <input type="text" class="email-input__input" placeholder="Ваш email:" id="enail">
-            </div>
-            <div class="connection-inputs__comment-input comment-input">
-              <label for="comment" class="comment-input_label visually-hidden">
-                Что вас интересует?
-              </label>
-              <textarea name="comment" id="comment" class="comment-input__area" placeholder="Что вас интересует?"></textarea>
-            </div>
-            <button class="connection-inputs__send-button send-button" type="submit">
-              Отправить
-            </button>
-          </form>
+            <p class="connection__description">
+              Мы обязательно свяжемся с вами в течение двух рабочих дней
+            </p>
+            <form action="#" method="post" class="connection__inputs connection-inputs">
+              <div class="connection-inputs__wrapper">
+                <div class="connection-inputs__name-input name-input">
+                  <label for="name" class="name-input__label visually-hidden">
+                    Ваше имя:
+                  </label>
+                  <input type="text" class="name-input__input" placeholder="Ваше имя:" id="name">
+                </div>
+                <div class="connection-inputs__email-input email-input">
+                  <label for="email" class="email-input__label visually-hidden">
+                    Ваш email:
+                  </label>
+                  <input type="text" class="email-input__input" placeholder="Ваш email:" id="enail">
+                </div>
+              </div>
+              <div class="connection-inputs__comment-input comment-input">
+                <label for="comment" class="comment-input_label visually-hidden">
+                  Что вас интересует?
+                </label>
+                <textarea name="comment" id="comment" class="comment-input__area" placeholder="Что вас интересует?"></textarea>
+              </div>
+              <button class="connection-inputs__send-button send-button" type="submit">
+                Отправить
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </div>
@@ -513,7 +534,15 @@
   </script>
   <script src="js/modal.js">
   </script>
-  <script src="js/slider.js">
+  <script src="js/intro-slider.js">
+  </script>
+  <script src="js/about-slider.js">
+  </script>
+  <script src="js/instruction-slider.js">
+  </script>
+  <script src="js/technology-slider.js">
+  </script>
+  <script src="js/faq-slider.js">
   </script>
 </body>
 

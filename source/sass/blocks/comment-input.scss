@@ -17,3 +17,14 @@
     }
   }
 }
+
+@media (min-width: 1366px) {
+  .comment-input {
+    margin-top: 7px;
+  }
+
+  .comment-input__area {
+    height: 141px;
+    width: 565px;
+  }
+}

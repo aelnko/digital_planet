@@ -7,3 +7,13 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.24);
   }
 }
+
+@media (min-width: 1366px) {
+  .nav-list {
+    display: flex;
+    border-bottom: none;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}

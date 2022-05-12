@@ -16,3 +16,44 @@
     margin-top: 10px;
   }
 }
+
+@media (min-width: 1366px) {
+  .about-gallery {
+    width: 737px;
+    margin-left: 605px;
+    margin-top: -183px;
+  }
+
+  .about-gallery__title {
+    width: 192px;
+    font-size: 24px;
+    text-align: right;
+    position: absolute;
+    top: 425px;
+    left: 445px;
+    line-height: 27.6px;
+    z-index: 1;
+  }
+
+  .about-gallery__image-wrapper {
+    width: 556px;
+    height: 272px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      border: 4px solid #0DD1A2;
+      position: absolute;
+      top: -14px;
+      left: 13px;
+      z-index: -1;
+    }
+  }
+
+  .about-gallery__image {
+    width: 562px;
+    height: 300px;
+  }
+}

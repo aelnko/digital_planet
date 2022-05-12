@@ -10,3 +10,10 @@
     display: flex;
   }
 }
+
+@media (min-width: 1366px) {
+  .social-contacts {
+    margin: 2px 0 0;
+    width: auto;
+  }
+}

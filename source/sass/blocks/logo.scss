@@ -3,5 +3,43 @@
     background-image: url("../../img/digpl-logo.svg");
     background-repeat: no-repeat;
     margin-left: 20px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .logo__description {
+    @include visually-hidden();
+  }
+}
+
+@media (min-width: 1366px) {
+  .logo {
+    text-decoration: none;
+    width: 193px;
+    margin-left: 64px;
+    order: 0;
+  }
+
+  .logo__description {
+    position: static;
+    width: 165px;
+    height: none;
+    margin: 0;
+    border: none;
+    padding: 0;
+    white-space: normal;
+    clip-path: none;
+    clip: auto;
+    overflow: visible;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    line-height: 20.68px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: block;
+    color: #FFFFFF;
+    margin-left: 43px;
+    margin-top: 4px;
+    letter-spacing: 0.5px;
   }
 }

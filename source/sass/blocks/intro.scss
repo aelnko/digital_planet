@@ -60,3 +60,37 @@
     }
   }
 }
+
+@media (min-width: 1366px) {
+  .intro {
+    width: 728px;
+    margin-left: 120px;
+    margin-top: 226px;
+  }
+
+  .intro__title {
+    font-size: 96px;
+    width: 738px;
+  }
+
+  .intro__description {
+    font-size: 17px;
+    width: 494px;
+    line-height: 25.5px;
+    text-align: left;
+    margin-top: 24px;
+  }
+
+  .intro__scroll-button {
+    margin-top: 156px;
+    margin-left: 417px;
+
+    &::before {
+      width: 9px;
+    }
+
+    &::after {
+      width: 9px;
+    }
+  }
+}

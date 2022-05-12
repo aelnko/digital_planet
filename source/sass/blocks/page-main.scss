@@ -11,3 +11,10 @@
   //   margin-top: -23px;
   // }
 }
+
+@media (min-width: 1366px) {
+  .page-main {
+    width: 1366px;
+    margin: 0 auto;
+  }
+}

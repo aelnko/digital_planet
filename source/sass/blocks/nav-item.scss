@@ -7,8 +7,51 @@
     color: #FFFFFF;
     line-height: 17.24px;
 
-    &:not(:nth-of-type(6)) {
-      margin-bottom: 35px;
+    
+  }
+}
+
+@media (min-width: 1366px) {
+  .nav-item {
+    &:nth-of-type(1) {
+      @include visually-hidden();
     }
+
+    &:not(:nth-of-type(6)) {
+      margin-bottom: 0;
+      margin-right: 38px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 5px;
+        width: 5px;
+        background-color: #B0ACAC;
+        border-radius: 50%;
+        top: 6px;
+        left: 112px;
+      }
+    }
+
+    &:nth-of-type(3) {
+      &::before {
+        left: 126px;
+      }
+    }
+
+    &:nth-of-type(4) {
+      &::before {
+        left: 117px;
+      }
+    }
+
+    &:nth-of-type(5) {
+      &::before {
+        left: 93px;
+      }
+    }
+
+    margin-left: 0;
   }
 }

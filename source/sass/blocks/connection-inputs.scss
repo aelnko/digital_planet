@@ -5,3 +5,20 @@
     
   }
 }
+
+@media (min-width: 1366px) {
+  .connection-inputs {
+    margin-top: 12px;
+    width: 570px;
+  }
+
+  .connection-inputs__wrapper {
+    display: flex;
+    width: 570px;
+    justify-content: space-between;
+  }
+
+  .connection-inputs__send-button {
+    margin-top: 15px;
+  }
+}

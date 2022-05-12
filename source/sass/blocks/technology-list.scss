@@ -5,3 +5,12 @@
     list-style-type: none;
   }
 }
+
+@media (min-width: 1366px) {
+  .technology-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+  }
+}

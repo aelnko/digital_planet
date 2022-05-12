@@ -21,3 +21,18 @@
     margin: 10px 0 0 0;
   }
 }
+
+@media (min-width: 1366px) {
+  .connection {
+    margin-left: 98px;
+    margin-top: 69px;
+  }
+
+  .connection__title {
+    width: 376px;
+  }
+
+  .connection__description {
+    margin-top: 13px;
+  }
+}

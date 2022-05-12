@@ -101,3 +101,156 @@
     opacity: 0.8;
   }
 }
+
+@media (min-width: 1366px) {
+  .technology-item {
+    display: block;
+    position: relative;
+  }
+
+  .technology-item__counter {
+    @include visually-hidden();
+  }
+
+  .technology__buttons {
+    @include visually-hidden();
+  }
+
+  .technology-item__wrapper {
+    position: relative;
+  }
+
+  .technology-item__text {
+    width: 280px;
+    line-height: 19.5px;
+  }
+
+  .technology-item {
+    &:not(:nth-of-type(1)) .technology-item__image-wrapper {
+      @include visually-hidden();
+    }
+
+    &:nth-of-type(1) .technology-item__image {
+      width: 422px;
+      height: 412px;
+    }
+
+    &:nth-of-type(1) .technology-item__image-wrapper {
+      position: absolute;
+      left: 343px;
+      top: 4px;
+      width: 480px;
+      height: 480px;
+
+      &::before {
+        width: 480px;
+        height: 480px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 50%;
+        background-image: none;
+        top: -35px;
+        left: -40px;
+      }
+
+      &::after {
+        content: "";
+        width: 85px;
+        height: 85px;
+        background-color: #15B28D;
+        position: absolute;
+        border-radius: 50%;
+        top: 306px;
+        left: 302px;
+        background-image: url("../../img/loup.svg");
+        background-repeat: no-repeat;
+        background-position: 27px 25px;
+      }
+    }
+
+    &:nth-of-type(1) .technology-item__title {
+      margin-top: 17px;
+      margin-left: 29px;
+    }
+
+    &:nth-of-type(1) .technology-item__text {
+      margin-top: 13px;
+      margin-left: 26px;
+    }
+  }
+
+  .technology-item {
+    &:nth-of-type(2) {
+      margin-top: -12px;
+      margin-left: 11px;
+    }
+
+    &:nth-of-type(3) .technology-item__wrapper {
+      margin-top: 0;
+    }
+
+    &:nth-of-type(3) {
+      margin-top: 50px;
+      margin-left: 540px;
+    }
+
+    &:nth-of-type(4) {
+      margin-top: -29px;
+      margin-left: 539px;
+    }
+  }
+
+  .technology-item {
+    &:nth-of-type(1) {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 181px;
+        height: 114px;
+        background-image: url("../../img/pointer1.svg");
+        top: 91px;
+        left: 238px;
+        z-index: 2;
+      }
+    }
+
+    &:nth-of-type(2) {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 410px;
+        height: 83px;
+        background-image: url("../../img/pointer2.svg");
+        top: 25px;
+        left: 185px;
+        z-index: 2;
+      }
+    }
+
+    &:nth-of-type(3) {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 245px;
+        height: 98px;
+        background-image: url("../../img/pointer3.svg");
+        top: 42px;
+        left: -242px;
+        z-index: 2;
+      }
+    }
+
+    &:nth-of-type(4) {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 124px;
+        height: 90px;
+        background-image: url("../../img/pointer4.svg");
+        top: 17px;
+        left: -119px;
+        z-index: 2;
+      }
+    }
+  }
+
+}

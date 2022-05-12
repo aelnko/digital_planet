@@ -3,3 +3,13 @@
     margin-top: 80px;
   }
 }
+
+@media (min-width: 1366px) {
+  .page-footer {
+    display: flex;
+    width: 1212px;
+    margin: 114px auto 30px auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

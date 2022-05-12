@@ -15,6 +15,10 @@
       padding-left: 15px;
     }
   }
+}
 
-
+@media (min-width: 1366px) {
+  .name-input__input {
+    width: 277px;
+  }
 }
