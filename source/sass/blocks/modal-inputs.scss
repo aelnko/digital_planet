@@ -28,3 +28,9 @@
     border-radius: 2px;
   }
 }
+
+@media (min-width: 1366px) {
+  .modal-inputs {
+    width: 400px;
+  }
+}

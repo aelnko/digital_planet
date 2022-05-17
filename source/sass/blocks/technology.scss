@@ -23,11 +23,15 @@
 
   .technology__buttons {
     margin-left: 184px;
-    margin-top: 34px;
+    margin-top: 23px;
   }
 
   .technology__button-next {
     margin-left: -4px;
+  }
+
+  .technology__scroll-button {
+    display: none;
   }
 }
 
@@ -35,7 +39,7 @@
   .technology {
     width: 1142px;
     margin-left: 90px;
-    margin-top: 168px;
+    margin-top: 185px;
   }
 
   .technology__title {
@@ -50,6 +54,7 @@
   }
 
   .technology__scroll-button {
+    display: block;
     @include button();
     width: 30px;
     height: 30px;

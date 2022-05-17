@@ -1,4 +1,4 @@
-
+const instructionNavItem = document.querySelector('.nav-item:nth-of-type(3)');
 const aboutScrollButton = document.querySelector('.about__scroll-button');
 
 function scrollClickAbout(e) {

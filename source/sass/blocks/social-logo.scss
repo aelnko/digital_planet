@@ -11,3 +11,25 @@
     fill: #FFFFFF;
   }
 }
+
+@media (min-width: 1366px) {
+  .social-logo--fb {
+    opacity: 0.6;
+  }
+
+  .social-logo--vk {
+    opacity: 0.6;
+  }
+
+  .social-logo--fb {
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .social-logo--vk {
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

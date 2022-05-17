@@ -4,6 +4,11 @@
     margin: 0 auto;
   }
 
+  .page-main--opened-nav {
+    overflow: hidden;
+    position: fixed;
+  }
+
   // .page-main__wrapper {
   //   background-image: url("../../img/index-bg.jpg");
   //   background-attachment: fixed;

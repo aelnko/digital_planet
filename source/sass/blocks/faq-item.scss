@@ -80,10 +80,16 @@
     font-size: 15px;
     font-weight: 300;
     line-height: 22.5px;
-    width: 288px;
+    width: 285px;
     margin-left: 8px;
     padding-top: 10px;
     padding-bottom: 20px;
+  }
+
+  .faq-item__answer-button {
+    &:hover {
+      background-color: #0DD1A2;
+    }
   }
 }
 

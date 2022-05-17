@@ -6,6 +6,17 @@
     font-size: 14px;
     margin-left: 58px;
   }
+
+  .order-button {
+    &:hover {
+      background-color: #0DD1A2;
+      border-color: #0DD1A2;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
 }
 
 @media (min-width: 1366px) {

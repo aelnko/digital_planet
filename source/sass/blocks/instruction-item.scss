@@ -16,6 +16,18 @@
     position: relative;
   }
 
+  .instruction-item__text-wrapper {
+    order: 1;
+  }
+
+  .instruction-item__image-wrapper {
+    order: 0;
+  }
+
+  .instruction-item__counter {
+    order: 2;
+  }
+
   .instruction-item__title {
     margin: 32px 0 0 0;
     font-size: 21px;
@@ -156,17 +168,19 @@
   }
 
   .instruction-item__wrapper {
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
 
   .instruction-item__image-wrapper {
     margin-top: -8px;
     margin-left: -8px;
+    order: 0;
   }
 
   .instruction-item__text-wrapper {
     margin-top: -41px;
     margin-left: 58px;
+    order: 1;
   }
 
   .instruction-item__counter {

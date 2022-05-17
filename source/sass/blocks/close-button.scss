@@ -28,3 +28,18 @@
     }
   }
 }
+
+@media (min-width: 1366px) {
+  .close-button {
+    margin-top: 12px;
+    margin-left: 519px;
+
+    &::before {
+      width: 16px;
+    }
+
+    &::after {
+      width: 16px;
+    }
+  }
+}

@@ -25,4 +25,16 @@
       opacity: 0.5;
     }
   }
+
+  .button-prev:hover {
+    &::before {
+      border-color: #0DD1A2;
+    }
+  }
+
+  .button-prev:active {
+    &::before {
+      opacity: 0.8;
+    }
+  }
 }

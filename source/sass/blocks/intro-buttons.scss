@@ -93,6 +93,7 @@
       width: 31px;
       height: 31px;
       background-size: 31px 31px;
+      background-image: url("../../img/video-btn-icon-desktop.svg");
       top: 17px;
       left: 38px;
     }
@@ -112,8 +113,30 @@
       width: 31px;
       height: 31px;
       background-size: 31px 31px;
+      background-image: url("../../img/order-btn-icon-desktop.svg");
       top: 19px;
       left: 40px;
+    }
+  }
+
+  .intro-buttons__order {
+    &:hover {
+      background-color: #0DD1A2;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+
+  .intro-buttons__video {
+    &:hover {
+      background-color: #0DD1A2;
+      border-color: #0DD1A2;
+    }
+
+    &:active {
+      opacity: 0.8;
     }
   }
 }

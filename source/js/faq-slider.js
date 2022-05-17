@@ -1,4 +1,5 @@
 const faqScrollButton = document.querySelector('.faq__scroll-button');
+const contactsNavItem = document.querySelector('.nav-item:nth-of-type(6)');
 
 function faqScrollClick(e) {
   if (e === mediaQuery2) {

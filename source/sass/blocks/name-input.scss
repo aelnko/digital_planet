@@ -12,13 +12,61 @@
       font-size: 13px;
       color: #1C1C1C;
       opacity: 0.4;
-      padding-left: 15px;
     }
   }
+
+  .name-input__input {
+    &:focus {
+      outline: 2px solid #0DD1A2;
+    }
+
+    &:active {
+      outline: 2px solid #0DD1A2;
+    }
+
+    // &:valid {
+    //   outline: 2px solid #1DC04B;
+    //   position: relative;
+    // }
+  }
+
+  // .name-input--success {
+  //   position: relative;
+
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     width: 10px;
+  //     height: 3px;
+  //     background-color: #1DC04B;
+  //     z-index: 2;
+  //     transform: rotate(45deg);
+  //     border-radius: 20px;
+  //     top: 25px;
+  //     left: 245px;
+  //   }
+
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //     width: 15px;
+  //     height: 3px;
+  //     background-color: #1DC04B;
+  //     z-index: 2;
+  //     border-radius: 20px;
+  //     transform: rotate(-55deg);
+  //     top: 22px;
+  //     left: 250px;
+  //   }
+  // }
 }
 
 @media (min-width: 1366px) {
   .name-input__input {
-    width: 277px;
+    width: 260px;
+  }
+
+  .name-input--modal .name-input__input{
+    width: 400px;
   }
 }

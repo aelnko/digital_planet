@@ -66,6 +66,19 @@
     width: 728px;
     margin-left: 120px;
     margin-top: 226px;
+    position: relative;
+  }
+
+  .intro {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/kid_VR.png");
+      width: 430px;
+      height: 350px;
+      top: 192px;
+      left: 816px;
+    }
   }
 
   .intro__title {

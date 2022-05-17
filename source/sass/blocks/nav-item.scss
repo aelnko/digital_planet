@@ -6,7 +6,11 @@
     margin-left: 24px;
     color: #FFFFFF;
     line-height: 17.24px;
-
+    cursor: pointer;
+    
+    &:not(:last-of-type) {
+      margin-bottom: 36px;
+    }
     
   }
 }
@@ -53,5 +57,15 @@
     }
 
     margin-left: 0;
+  }
+
+  .nav-item--active {
+    color: #0DD1A2;
+  }
+
+  .nav-item {
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }

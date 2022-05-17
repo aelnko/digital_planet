@@ -1,0 +1,32 @@
+@media (min-width: 1366px) {
+  .phone-input {
+    margin-top: 6px;
+  }
+
+  .phone-input__input {
+    width: 400px;
+    border: none;
+    height: 46px; 
+
+    &::placeholder {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 13px;
+      color: #1C1C1C;
+      opacity: 0.4;
+    }
+  }
+
+  .phone-input__input {
+    &:focus {
+      outline: 2px solid #0DD1A2;
+    }
+
+    &:active {
+      outline: 2px solid #0DD1A2;
+    }
+
+    &:invalid {
+      outline: 2px solid #F97676;
+    }
+  }
+}

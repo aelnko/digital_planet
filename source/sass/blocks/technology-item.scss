@@ -44,7 +44,8 @@
     font-size: 15px;
     width: 280px;
     color: #FFFFFF;
-    margin: 10px 0 0 16px;
+    line-height: 19px;
+    margin: 12px 0 0 16px;
   }
 
   .technology-item {
@@ -151,20 +152,6 @@
         top: -35px;
         left: -40px;
       }
-
-      &::after {
-        content: "";
-        width: 85px;
-        height: 85px;
-        background-color: #15B28D;
-        position: absolute;
-        border-radius: 50%;
-        top: 306px;
-        left: 302px;
-        background-image: url("../../img/loup.svg");
-        background-repeat: no-repeat;
-        background-position: 27px 25px;
-      }
     }
 
     &:nth-of-type(1) .technology-item__title {
@@ -250,6 +237,26 @@
         left: -119px;
         z-index: 2;
       }
+    }
+  }
+
+  .technology-item__button {
+    @include button();
+    width: 85px;
+    height: 85px;
+    background-color: #15B28D;
+    position: absolute;
+    border-radius: 50%;
+    top: 373px;
+    left: 663px;
+    background-image: url("../../img/loup.svg");
+    background-repeat: no-repeat;
+    background-position: 27px 25px;
+  }
+
+  .technology-item__button {
+    &:hover {
+      background-color: #0DD1A2;
     }
   }
 

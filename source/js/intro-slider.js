@@ -1,29 +1,19 @@
 const introScrollButton = document.querySelector('.intro__scroll-button');
-const mediaQuery = window.matchMedia('(min-width: 320px)');
 const mediaQuery2 = window.matchMedia('(min-width: 1366px)');
-
-// introScrollButton.addEventListener('click', function scrollClick(e) {
-//   if (e.matches) {
-//     window.scrollTo(0, 568);
-//   }
-// })
+const aboutNavItem = document.querySelector('.nav-item:nth-of-type(2)')
 
 function scrollClick(e) {
-  if (e === mediaQuery) {
+  if (e.matches) {
     introScrollButton.onclick = () => {
-      window.scrollTo(0, 568);
+      window.scrollTo(0, 768);
     }
   } else {
     introScrollButton.onclick = () => {
-      window.scrollTo(0, 768);
+      window.scrollTo(0, 568);
     }
   }
 }
 
-
-
-mediaQuery.addListener(scrollClick);
-scrollClick(mediaQuery);
 mediaQuery2.addListener(scrollClick);
 scrollClick(mediaQuery2);
 

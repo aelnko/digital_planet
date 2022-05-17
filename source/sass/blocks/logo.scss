@@ -20,6 +20,16 @@
     order: 0;
   }
 
+  .logo {
+    &:hover {
+      background-image: url("../../img/digpl-logo-hover.svg");
+    }
+  }
+
+  .logo:hover .logo__description {
+    color: #0DD1A2;
+  }
+
   .logo__description {
     position: static;
     width: 165px;

@@ -7,8 +7,26 @@
     z-index: 3;
   }
 
+  .page-header__phone {
+    display: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    width: 127px;
+  }
+
+  .page-header--opened-nav .page-header__phone {
+    display: block;
+    position: fixed;
+    top: 469px;
+    left: 24px;
+    z-index: 3;
+  }
+
   .page-header--opened-nav {
     background-image: url("../../img/mobile-nav-bg.jpg");
+    position: fixed;
+    height: 100vh;
   }
 
   .page-header__logo {
@@ -74,6 +92,7 @@
   }
 
   .page-header__phone {
+    display: block;
     order: 3;
     font-weight: 700;
     color: #FFFFFF;

@@ -1,4 +1,5 @@
 const instructionScrollButton = document.querySelector('.instruction__scroll-button');
+const technologyNavItem = document.querySelector('.nav-item:nth-of-type(4)');
 
 function scrollClickInstruction(e) {
   if (e === mediaQuery2) {

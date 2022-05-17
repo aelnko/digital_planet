@@ -1,4 +1,5 @@
 const technologyScrollButton = document.querySelector('.technology__scroll-button');
+const faqNavItem = document.querySelector('.nav-item:nth-of-type(5)');
 
 function scrollClickTechnology(e) {
   if (e === mediaQuery2) {

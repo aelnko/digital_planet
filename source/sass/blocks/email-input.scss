@@ -1,6 +1,6 @@
 @media (min-width: 320px) {
   .email-input {
-    margin-top: 10px;
+    margin-top: 8px;
   }
 
   .email-input__input {
@@ -13,7 +13,24 @@
       font-size: 13px;
       color: #1C1C1C;
       opacity: 0.4;
-      padding-left: 15px;
+    }
+  }
+
+  .email-input__input {
+    &:focus {
+      outline: 2px solid #0DD1A2;
+    }
+
+    // &:valid {
+    //   outline: 2px solid #1DC04B;
+    // }
+
+    &:invalid {
+      outline: 2px solid #F97676;
+    }
+
+    &:active {
+      outline: 2px solid #0DD1A2;
     }
   }
 }
@@ -24,6 +41,6 @@
   }
 
   .email-input__input {
-    width: 277px;
+    width: 262px;
   }
 }

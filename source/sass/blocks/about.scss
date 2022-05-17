@@ -39,6 +39,10 @@
   .about__description--third {
     margin-top: 25px;
   }
+
+  .about__scroll-button {
+    display: none;
+  }
 }
 
 @media (min-width: 1366px) {
@@ -71,6 +75,7 @@
   }
 
   .about__scroll-button {
+    display: block;
     @include button();
     width: 30px;
     height: 30px;

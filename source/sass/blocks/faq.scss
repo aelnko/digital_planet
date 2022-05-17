@@ -20,12 +20,29 @@
       top: 75px;
     }
   }
+
+  .faq__scroll-button {
+    display: none;
+  }
 }
 
 @media (min-width: 1366px) {
   .faq {
     margin-top: 178px;
     margin-left: 73px;
+    position: relative;
+  }
+
+  .faq {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 235px;
+      height: 264px;
+      background-image: url("../../img/boy.png");
+      top: 343px;
+      left: 1028px;
+    }
   }
 
   .faq__title {
@@ -38,13 +55,14 @@
   }
 
   .faq__scroll-button {
+    display: block;
     @include button();
     width: 30px;
     height: 30px;
     opacity: 0.7;
     position: relative;
-    margin-left: 592px;
-    margin-top: 20px;
+    margin-left: 594px;
+    margin-top: 35px;
 
     &::before {
       content: "";
