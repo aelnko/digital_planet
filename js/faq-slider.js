@@ -1,0 +1,1 @@
+const faqScrollButton=document.querySelector(".faq__scroll-button"),contactsNavItem=document.querySelector(".nav-item:nth-of-type(6)");function faqScrollClick(o){o===mediaQuery2&&(faqScrollButton.onclick=()=>{window.scrollTo(0,3840)})}mediaQuery2.addListener(faqScrollClick),faqScrollClick(mediaQuery2);
