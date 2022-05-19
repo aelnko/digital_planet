@@ -3,6 +3,10 @@
     display: none
   }
 
+  .technology-item__button {
+    display: none;
+  }
+
   .technology-item--visible {
     display: block;
   }
@@ -241,6 +245,7 @@
   }
 
   .technology-item__button {
+    display: block;
     @include button();
     width: 85px;
     height: 85px;
