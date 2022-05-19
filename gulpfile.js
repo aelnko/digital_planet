@@ -47,7 +47,7 @@ const scripts = () => {
 // Images
 
 const optimizeImages = () => {
-  return gulp.src('source/img/*.{jpg,png}')
+  return gulp.src('build/img/*.{jpg,png}')
   .pipe(squoosh())
   .pipe(gulp.dest('build/img'))
 }
@@ -136,6 +136,7 @@ const watcher = () => {
 export const build = gulp.series(
   clean,
   copy,
+  copyImages,
   optimizeImages,
   gulp.parallel(
     styles,
