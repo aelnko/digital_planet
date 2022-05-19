@@ -13,60 +13,78 @@
 
 <body class="page-body">
   <header class="page-body__header page-header">
-    <a href="#" class="page-header__logo logo">
-      <span class="logo__description">
-        Digital Planet
+    <div class="page-header__wrapper">
+      <a href="#" class="page-header__logo logo">
+        <span class="logo__description">
+          Digital Planet
+        </span>
+      </a>
+      <button class="page-header__button order-button open-modal-button">
+        Заказать
+      </button>
+      <button class="page-header__nav-toggle">
+        <span class="visually-hidden">
+          Открыть меню
+        </span>
+      </button>
+      <nav class="page-header__nav nav">
+        <ul class="nav__list nav-list">
+          <li class="nav-list__item nav-item">
+            Главная
+          </li>
+          <li class="nav-list__item nav-item" onclick="aboutScroll()">
+            О продукте
+          </li>
+          <li class="nav-list__item nav-item" onclick="instructionScroll()">
+            Как работает
+          </li>
+          <li class="nav-list__item nav-item" onclick="technologyScroll()">
+            Технология
+          </li>
+          <li class="nav-list__item nav-item" onclick="faqScroll()">
+            Вопросы
+          </li>
+          <li class="nav-list__item nav-item" onclick="contactsScroll()">
+            Контакты
+          </li>
+        </ul>
+        <!-- <ul class="nav__social-contacts nav-social-contacts">
+          <li class="nav-social-contacts__item nav-social-item">
+            <a href="facebook.com" class="nav-social-item__link nav-social-link nav-social-link--fb">
+              <svg class="nav-social-item__logo nav-social-logo nav-social-logo--fb" width="15" height="30">
+                <use xlink:href="img/social-icons.svg#nav-fb-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="nav-social-contacts__item nav-social-item">
+            <a href="vk.com" class="nav-social-item__link nav-social-link nav-social-link--vk">
+              <svg class="nav-social-item__logo nav-social-logo nav-social-logo--vk">
+                <use xlink:href="img/social-icons.svg#nav-vk-logo"></use>
+              </svg>
+            </a>
+          </li>
+        </ul> -->
+      </nav>
+      <span class="page-header__phone">
+        8 (800) 555 35 75
       </span>
-    </a>
-    <button class="page-header__button order-button open-modal-button">
-      Заказать
-    </button>
-    <button class="page-header__nav-toggle">
-      <span class="visually-hidden">
-        Открыть меню
-      </span>
-    </button>
-    <nav class="page-header__nav nav">
-      <ul class="nav__list nav-list">
-        <li class="nav-list__item nav-item">
-          Главная
-        </li>
-        <li class="nav-list__item nav-item" onclick="aboutScroll()">
-          О продукте
-        </li>
-        <li class="nav-list__item nav-item" onclick="instructionScroll()">
-          Как работает
-        </li>
-        <li class="nav-list__item nav-item" onclick="technologyScroll()">
-          Технология
-        </li>
-        <li class="nav-list__item nav-item" onclick="faqScroll()">
-          Вопросы
-        </li>
-        <li class="nav-list__item nav-item" onclick="contactsScroll()">
-          Контакты
-        </li>
-      </ul>
-      <ul class="nav__social-contacts nav-social-contacts">
-        <li class="nav-social-contacts__item nav-social-item">
-          <a href="facebook.com" class="nav-social-item__link nav-social-link nav-social-link--fb">
-            <svg class="nav-social-item__logo nav-social-logo nav-social-logo--fb" width="15" height="30">
+      <ul class="page-header__social-contacts header-social-contacts">
+        <li class="header-social-contacts__item header-social-item">
+          <a href="facebook.com" class="header-social-item__link header-social-link header-social-link--fb">
+            <svg class="header-social-item__logo header-social-logo header-social-logo--fb" width="15" height="30">
               <use xlink:href="img/social-icons.svg#nav-fb-logo"></use>
             </svg>
           </a>
         </li>
-        <li class="nav-social-contacts__item nav-social-item">
-          <a href="vk.com" class="nav-social-item__link nav-social-link nav-social-link--vk">
-            <svg class="nav-social-item__logo nav-social-logo nav-social-logo--vk">
+        <li class="header-social-contacts__item header-social-item">
+          <a href="vk.com" class="header-social-item__link header-social-link header-social-link--vk">
+            <svg class="header-social-item__logo header-social-logo header-social-logo--vk">
               <use xlink:href="img/social-icons.svg#nav-vk-logo"></use>
             </svg>
           </a>
         </li>
       </ul>
-    </nav>
-    <span class="page-header__phone">
-      8 (800) 555 35 75
-    </span>
+    </div>
   </header>
 
   <main class="page-body__main page-main">
@@ -501,7 +519,7 @@
           <label for="name" class="name-input__label visually-hidden">
             Ваше имя
           </label>
-          <input type="text" class="name-input__input" placeholder="Ваше имя" id="name" pattern="[a-zA-Zа-яА-я]">
+          <input type="text" class="name-input__input" placeholder="Ваше имя" id="name">
         </div>
         <div class="modal-inputs__phone-input phone-input">
           <label for="name" class="phone-input__label visually-hidden">

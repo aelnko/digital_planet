@@ -5,17 +5,17 @@
   }
 
   .modal-window__wrapper {
-    position: fixed;
     width: 320px;
     height: 100%;
     background-color: #F3F3F3;
-    z-index: 3;
     margin: 0 auto;
   }
 
   .modal-window--opened {
     display: block;
     position: fixed;
+    z-index: 3;
+    height: 100vh;
   }
 
   .modal-window__title {

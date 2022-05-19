@@ -11,10 +11,13 @@
     z-index: 3;
     margin: 0 auto;
     flex-direction: column;
+    display: flex;
   }
 
   .form-message--opened {
     display: block;
+    height: 100vh;
+    z-index: 3;
   }
 
   .form-message__title {

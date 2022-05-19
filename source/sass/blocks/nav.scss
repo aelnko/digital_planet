@@ -5,12 +5,14 @@
 
   .nav--opened  {
     display: block;
-    height: 100vh;
-    position: fixed;
-    top: 56px;
+    // height: 100vh;
+    // position: fixed;
+    // top: 56px;
     background-image: url("../img/mobile-nav-bg.jpg");
     background-repeat: no-repeat;
     width: 320px;
+    order: 3;
+    margin-top: 0;
   }
 
   .nav__phone {
