@@ -67,6 +67,15 @@ window.onscroll = () => {
   }
 }
 
+const introScroll = () => {
+  headerElement.classList.remove('page-header--opened-nav');
+  pageMainElement.classList.remove('page-main--opened-nav');
+  pageFooterElement.classList.remove('page-footer--opened-nav');
+  nav.classList.remove('nav--opened');
+  navToggle.classList.remove('page-header__nav-toggle--close');
+  window.scrollTo(0, 0);
+}
+
 const aboutScroll = () => {
   if (headerElement.classList.contains('page-header--opened-nav')) {
     headerElement.classList.remove('page-header--opened-nav');
