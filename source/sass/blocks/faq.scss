@@ -40,8 +40,13 @@
       width: 235px;
       height: 264px;
       background-image: url("../img/boy.png");
+      background-size: cover;
       top: 343px;
       left: 1028px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/boy@2x.png");
+      }
     }
   }
 

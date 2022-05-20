@@ -1,3 +1,4 @@
+const introOrderButton = document.querySelector('.intro-buttons__order');
 const openModalButton = document.querySelector('.open-modal-button');
 const modalWindow = document.querySelector('.modal-window');
 const closeButton = document.querySelector('.close-button');
@@ -8,6 +9,10 @@ let sendingForm = document.querySelector('.modal-window__inputs');
 const okButton = document.querySelector('.form-message__ok-button');
 
 openModalButton.onclick = () => {
+  modalWindow.classList.add('modal-window--opened');
+}
+
+introOrderButton.onclick = () => {
   modalWindow.classList.add('modal-window--opened');
 }
 

@@ -78,6 +78,11 @@
       height: 350px;
       top: 192px;
       left: 816px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/kid_VR@2x.png");
+        background-size: cover;
+      }
     }
   }
 

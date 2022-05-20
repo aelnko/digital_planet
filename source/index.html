@@ -48,22 +48,6 @@
             Контакты
           </li>
         </ul>
-        <!-- <ul class="nav__social-contacts nav-social-contacts">
-          <li class="nav-social-contacts__item nav-social-item">
-            <a href="facebook.com" class="nav-social-item__link nav-social-link nav-social-link--fb">
-              <svg class="nav-social-item__logo nav-social-logo nav-social-logo--fb" width="15" height="30">
-                <use xlink:href="img/social-icons.svg#nav-fb-logo"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="nav-social-contacts__item nav-social-item">
-            <a href="vk.com" class="nav-social-item__link nav-social-link nav-social-link--vk">
-              <svg class="nav-social-item__logo nav-social-logo nav-social-logo--vk">
-                <use xlink:href="img/social-icons.svg#nav-vk-logo"></use>
-              </svg>
-            </a>
-          </li>
-        </ul> -->
       </nav>
       <span class="page-header__phone">
         8 (800) 555 35 75
@@ -127,7 +111,10 @@
           </h3>
           <div class="about-gallery__images gallery-images">
             <div class="about-gallery__image-wrapper">
-              <img src="img/astronaut-in-outer-space.jpg" alt="Астронавт в космосе" class="about-gallery__image">
+              <picture>
+                <source srcset="img/astronaut-in-outer-space.jpg 1x, img/astronaut-in-outer-space@2x.jpg 2x" type="image/jpeg">
+                <img src="img/astronaut-in-outer-space.jpg" alt="Астронавт в космосе" class="about-gallery__image">
+              </picture>
             </div>
             <div class="gallery-images__buttons-wrapper">
               <span class="gallery-images__counter">
@@ -159,8 +146,11 @@
                 </p>
               </div>
               <div class="instruction-item__image-wrapper">
-                <img src="img/inventory-preparing.jpg" alt="Готовим инвентарь" class="instruction-item__image"
+                <picture>
+                  <source srcset="img/inventory-preparing.jpg 1x, img/inventory-preparing@2x.jpg 2x" type="image/jpeg">
+                  <img src="img/inventory-preparing.jpg" alt="Готовим инвентарь" class="instruction-item__image"
                   width="195" height="130">
+                </picture>
                 <span class="instruction-item__image-counter">1</span>
               </div>
               <span class="instruction-item__counter">
@@ -183,8 +173,11 @@
                 </p>
               </div>
               <div class="instruction-item__image-wrapper">
-                <img src="img/choose-film.jpg" alt="Выбираем фильм" class="instruction-item__image" width="195"
-                  height="130">
+                <picture>
+                  <source srcset="img/choose-film.jpg 1x, img/choose-film@2x.jpg 2x" type="image/jpeg">
+                  <img src="img/choose-film.jpg" alt="Выбираем фильм" class="instruction-item__image" width="195"
+                    height="130">
+                </picture>
                 <span class="instruction-item__image-counter">2</span>
               </div>
               <span class="instruction-item__counter">
@@ -207,8 +200,11 @@
                 </p>
               </div>
               <div class="instruction-item__image-wrapper">
-                <img src="img/put-on-VR.jpg" alt="Надеваем VR-очки" class="instruction-item__image" width="195"
-                  height="130">
+                <picture>
+                  <source srcset="img/put-on-VR.jpg 1x, img/put-on-VR@2x.jpg 2x" type="image/jpeg">
+                  <img src="img/put-on-VR.jpg" alt="Надеваем VR-очки" class="instruction-item__image" width="195"
+                    height="130">
+                </picture>
                 <span class="instruction-item__image-counter">3</span>
               </div>
               <span class="instruction-item__counter">
@@ -231,8 +227,11 @@
                 </p>
               </div>
               <div class="instruction-item__image-wrapper">
-                <img src="img/explore.jpg" alt="Ребёнок исследует галактики при помощи VR"
-                  class="instruction-item__image" width="195" height="130">
+                <picture>
+                  <source srcset="img/explore.jpg 1x, img/explore@2x.jpg 2x" type="image/jpeg">
+                  <img src="img/explore.jpg" alt="Ребёнок исследует галактики при помощи VR"
+                    class="instruction-item__image" width="195" height="130">
+                </picture>
                 <span class="instruction-item__image-counter">4</span>
               </div>
               <span class="instruction-item__counter">
@@ -262,7 +261,11 @@
                 Masters Glass VR-iii
               </h3>
               <div class="technology-item__image-wrapper">
-                <img src="img/VR-iii.png" alt="Наши очки" class="technology-item__image">
+                <picture>
+                  <source media="(min-width:1366px)" srcset="img/VR-iii-desktop.png 1x, img/VR-iii-desktop@2x.png 2x" type="image/png">
+                  <source media="(min-width:320px)" srcset="img/VR-iii.png 1x, img/VR-iii@2x.png 2x" type="image/png">
+                  <img src="img/VR-iii.png" alt="Наши очки" class="technology-item__image">
+                </picture>
               </div>
               <p class="technology-item__text">
                 Используем только оригинальные импортные VR-очки. Технологии протестированы и безопасны для глаз.
@@ -282,7 +285,10 @@
                 Оборудование
               </h3>
               <div class="technology-item__image-wrapper">
-                <img src="img/VR-iii.png" alt="Оборудование" class="technology-item__image">
+                <picture>
+                  <source srcset="img/VR-iii.png 1x, img/VR-iii@2x.png 2x" type="image/png">
+                  <img src="img/VR-iii.png" alt="Оборудование" class="technology-item__image">
+                </picture>
               </div>
               <p class="technology-item__text">
                 Все фильмы воспроизводятся при помощи встроенных в очки экранов мобильных телефонов ведущих брендов.
@@ -301,7 +307,10 @@
                 Безопасность
               </h3>
               <div class="technology-item__image-wrapper">
-                <img src="img/VR-iii.png" alt="Безопасность" class="technology-item__image">
+                <picture>
+                  <source srcset="img/VR-iii.png 1x, img/VR-iii@2x.png 2x" type="image/png">
+                  <img src="img/VR-iii.png" alt="Безопасность" class="technology-item__image">
+                </picture>
               </div>
               <p class="technology-item__text">
                 Зритель всегда находится в центре зала, и четко зафиксирован в пространстве, что делает просмотр
@@ -321,7 +330,10 @@
                 Система крепления
               </h3>
               <div class="technology-item__image-wrapper">
-                <img src="img/VR-iii.png" alt="Система крепления" class="technology-item__image">
+                <picture>
+                  <source srcset="img/VR-iii.png 1x, img/VR-iii@2x.png 2x" type="image/png">
+                  <img src="img/VR-iii.png" alt="Система крепления" class="technology-item__image">
+                </picture>
               </div>
               <p class="technology-item__text">
                 Подходит под любой размер головы, даже для первоклассника. Во время просмотра не получится навредить

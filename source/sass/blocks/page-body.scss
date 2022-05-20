@@ -40,15 +40,25 @@
 
     &::after {
       background-image: url("../img/desktop-intro-bg.jpg");
+      background-size: cover;
       width: 100%;
       height: 768px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/desktop-intro-bg@2x.jpg");
+      }
     }
 
     &::before {
       background-image: url("../img/index-desktop-bg.jpg");
+      background-size: cover;
       width: 100%;
       background-repeat: no-repeat;
       margin-top: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-desktop-bg@2x.jpg");
+      }
     }
   }
 }

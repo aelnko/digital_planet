@@ -1,6 +1,7 @@
 @media (min-width: 320px) {
   .page-header {
     width: 320px;
+    height: auto;
   }
 
   .page-header__wrapper {
@@ -82,7 +83,7 @@
     }
   }
 
-  .page-header--scrolled {
+  .page-header__wrapper--scrolled {
     background-color: #000000;
     padding-bottom: 20px;
     border-bottom: 1px solid #0DD1A2;
@@ -119,7 +120,7 @@
     width: 127px;
   }
 
-  .page-header--scrolled {
+  .page-header__wrapper--scrolled {
     background-color: transparent;
     padding-bottom: 0;
     border-bottom: none;

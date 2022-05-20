@@ -136,25 +136,27 @@
     }
 
     &:nth-of-type(1) .technology-item__image {
-      width: 422px;
-      height: 412px;
+      width: 480px;
+      height: 480px;
     }
 
     &:nth-of-type(1) .technology-item__image-wrapper {
       position: absolute;
-      left: 343px;
-      top: 4px;
+      margin-left: 318px;
+      // left: 343px;
+      // top: 4px;
       width: 480px;
       height: 480px;
+      margin-top: -30px;
 
       &::before {
-        width: 480px;
-        height: 480px;
-        border: 1px solid rgba(255, 255, 255, 0.4);
-        border-radius: 50%;
-        background-image: none;
-        top: -35px;
-        left: -40px;
+        width: 0;
+        height: 0;
+        // border: 1px solid rgba(255, 255, 255, 0.4);
+        // border-radius: 50%;
+        // background-image: none;
+        // top: -35px;
+        // left: -40px;
       }
     }
 
