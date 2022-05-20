@@ -1,15 +1,16 @@
 const navItems = [aboutNavItem, instructionNavItem, technologyNavItem, faqNavItem, contactsNavItem];
-const headerElement = document.querySelector('.page-header__wrapper');
+const headerWrapper = document.querySelector('.page-header__wrapper');
+const headerElement = document.querySelector('.page-header');
 const pageMainElement = document.querySelector('.page-main');
 const pageFooterElement = document.querySelector('.page-footer');
 
 
 window.onscroll = () => {
-  if (window.scrollY >= headerElement.offsetHeight) {
-    headerElement.classList.add('page-header__wrapper--scrolled');
+  if (window.scrollY >= headerWrapper.offsetHeight) {
+    headerWrapper.classList.add('page-header__wrapper--scrolled');
     console.log('header');
   } else {
-    headerElement.classList.remove('page-header__wrapper--scrolled');
+    headerWrapper.classList.remove('page-header__wrapper--scrolled');
   }
 
   if (window.pageYOffset < 768) {
