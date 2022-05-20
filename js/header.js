@@ -1,1 +1,0 @@
-window.onscroll=()=>{window.scrollY>=headerElement.offsetHeight?(headerElement.classList.add("page-header--scrolled"),console.log("header")):headerElement.classList.remove("page-header--scrolled")};
