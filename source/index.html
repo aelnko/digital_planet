@@ -461,13 +461,15 @@
                   <label for="name" class="name-input__label visually-hidden">
                     Ваше имя:
                   </label>
-                  <input type="text" class="name-input__input" placeholder="Ваше имя:" id="name" pattern="[a-zA-Zа-яА-я]{1,}">
+                  <input type="text" class="name-input__input _req" placeholder="Ваше имя:" id="name" pattern="[a-zA-Zа-яА-я]{1,}">
+                  <span class="name-input__error-message error-message">Некорректный формат ввода</span>
                 </div>
                 <div class="connection-inputs__email-input email-input">
                   <label for="email" class="email-input__label visually-hidden">
                     Ваш email:
                   </label>
-                  <input type="email" class="email-input__input" placeholder="Ваш email:" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                  <input type="text" class="email-input__input _req" placeholder="Ваш email:" id="email">
+                  <span class="email-input__error-message error-message">Некорректный формат ввода</span>
                 </div>
               </div>
               <div class="connection-inputs__comment-input comment-input">
@@ -531,13 +533,13 @@
           <label for="name" class="name-input__label visually-hidden">
             Ваше имя
           </label>
-          <input type="text" class="name-input__input" placeholder="Ваше имя" id="name">
+          <input type="text" class="name-input__input _req" placeholder="Ваше имя" id="name">
         </div>
         <div class="modal-inputs__phone-input phone-input">
           <label for="name" class="phone-input__label visually-hidden">
             Ваш телефон
           </label>
-          <input type="text" class="phone-input__input" placeholder="Ваш телефон" id="name" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
+          <input type="text" class="phone-input__input _req" placeholder="Ваш телефон" id="phone" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
         </div>
         <button class="modal-inputs__button" type="submit">
           Отправить
@@ -581,6 +583,8 @@
   <script src="js/faq-slider.js">
   </script>
   <script src="js/onscroll.js">
+  </script>
+  <script src="js/form-validation.js">
   </script>
 </body>
 

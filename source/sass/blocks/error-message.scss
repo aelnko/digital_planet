@@ -1,0 +1,14 @@
+@media (min-width: 1366px) {
+  .error-message {
+    display: none;
+  }
+
+  .error-message._error {
+    display: block;
+    outline: none;
+    font-size: 13px;
+    color: #F97676;
+    margin-top: 5px;
+    position: absolute;
+  }
+}

@@ -26,12 +26,6 @@ sendingForm.addEventListener('submit', function(e) {
   formMessage.classList.add('form-message--opened');
 })
 
-// modalSendButton.onclick = () => {
-//   console.log('A!');
-//   formMessage.classList.add('form-message--opened');
-//   modalWindow.classList.remove('modal-window--opened');
-// }
-
 closeMessageButton.onclick = () => {
   formMessage.classList.remove('form-message--opened');
 }

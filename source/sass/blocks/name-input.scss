@@ -1,5 +1,29 @@
 @media (min-width: 320px) {
-  .name-input {
+  .name-input._error {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 3px;
+      border-radius: 20%;
+      background-color: #F97676;
+      top: 23px;
+      left: 245px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 3px;
+      border-radius: 20%;
+      background-color: #F97676;
+      top: 23px;
+      left: 245px;
+      transform: rotate(-45deg);
+    }
   }
 
   .name-input__input {
@@ -13,6 +37,10 @@
       color: #1C1C1C;
       opacity: 0.4;
     }
+  }
+
+  .name-input__input._error {
+    outline: 2px solid #F97676;
   }
 
   .name-input__input {
