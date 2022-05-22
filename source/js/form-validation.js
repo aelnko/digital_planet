@@ -8,7 +8,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let error = formValidate(connectionForm);
     if (error !== 0) {
-      console.log('Заполните поля');
+      alert('Что-то не так...');
+    } else {
+      console.log('Send');
+      formMessage.classList.add('form-message--opened');
     }
   }
 
@@ -25,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
       if (input.classList.contains('email-input__input')) {
         if (emailTest(input)) {
           formAddError(input, message);
-          console.log('a');
           error++;
         }
         } else if (input.classList.contains('name-input__input')) {
